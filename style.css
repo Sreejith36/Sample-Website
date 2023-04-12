@@ -14,7 +14,7 @@ header{
     background-color: rgba(23, 23, 23, 0.15);
     color: white;
     padding: 20px;
-    position: absolute;
+    position: fixed;
     top: 0;
 }
 
@@ -194,3 +194,16 @@ border-color: #3333ff;
     transform: scale(1.2) rotate(-5deg);
 }
 /* bottom section end */
+
+/* Footer Section start */
+footer{
+    text-align: center;
+    color: gray;
+    padding: 15px;
+}
+
+footer span{
+    color: var(--color-1);
+    font-weight: bold;
+}
+/* Footer Section End*/
