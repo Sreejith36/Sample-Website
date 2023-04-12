@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
+    <link rel="stylesheet" href="variables.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -32,17 +33,17 @@
                 </div>
                 <div class="right-section">
                     <h4>Please fill the form</h4>
-                    <form action="">
+                    <form action="" autocomplete="off">
                         <div class="input-group">
-                            <input type="text" id="name" placeholder="name">
+                            <input type="text" id="name" required>
                             <label for="name">Name</label>
                         </div>
                         <div class="input-group">
-                            <input type="email" id="email" placeholder="email">
+                            <input type="email" id="email" required>
                             <label for="email">Email</label>
                         </div>
                         <div class="input-group">
-                            <input type="password" id="password" placeholder="password">
+                            <input type="password" id="password" required>
                             <label for="password">Password</label>
                         </div>
                         <div class="submit-section">

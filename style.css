@@ -12,6 +12,7 @@ body{
 header{
     width: 100%;
     background-color: rgba(23, 23, 23, 0.15);
+    color: white;
     padding: 20px;
     position: absolute;
     top: 0;
@@ -20,6 +21,8 @@ header{
 header .container{
     display: flex;
     justify-content: space-between;
+    width: 1220px;
+    margin: auto;
 }
 
 header a {
@@ -27,6 +30,7 @@ header a {
     margin-right: 100px;
     font-size: 14px;
     letter-spacing: 2px;
+    color: white;
 }
 
 /* header end */
@@ -37,7 +41,7 @@ header a {
     height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(45deg, #0073e6, #4da6ff);
+    background: linear-gradient(45deg, #0000e6, #4da6ff);
 }
 
 .banner-container .container{
@@ -51,6 +55,7 @@ header a {
 /* Left section start */
 .left-section{
     width: 50%;
+    align-self: flex-start;
 }
 
 .left-section h1{
@@ -69,8 +74,8 @@ header a {
 }
 
 .left-section button{
-    background-color: purple;
-    color: white;
+    background-color: white;
+    color: var(--color-1);
     padding: 12px 30px;
     font-weight: bold;
     border: none;
@@ -80,3 +85,76 @@ header a {
 }
 
 /* left section end */
+
+/* right section (form) start */
+.right-section{
+    background-color: white;
+    width: 400px;
+    padding: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 6px #004080;
+}
+
+.right-section h4{
+    font-size: 20px;
+    width: 300px;
+    margin: auto;
+    margin-bottom: 30px;
+    color: #4da6ff;
+}
+
+.input-group{
+    width: 300px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.input-group label {
+    font-size: var(--font-14);
+    position: absolute;
+    top: 10px;
+    color: gray;
+    transition: 0.5s ease-in-out;
+}
+
+.input-group input {
+    border: none;
+    padding: 7px;
+    margin-top: 5px;
+    outline: none;
+    border-radius: 6px;
+    border-bottom: 1px solid lightblue;
+    color: var(--color-1);
+}
+
+.input-group input:focus ~ label, 
+.input-group input:valid ~ label {
+    color: var(--color-1);
+    top: -10px;
+    font-size: 12px;
+}
+
+.input-group input:focus{
+border-color: #3333ff;  
+}
+
+.submit-section {
+    text-align: center;
+}
+.submit-button{
+    border: none;
+    border-radius: 6px;
+    background-color: #4da6ff;
+    color: white;
+    width: 250px;
+    padding: 10px  5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.submit-button:hover {
+    box-shadow: 0 3px 5px silver;
+}
+/* right section (form) end */
